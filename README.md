@@ -1,5 +1,7 @@
 # Slider Example
 
+[Demo](https://makson19.github.io/slider-example/)
+
 ## Instalação
 
 1. Clone este repositório:
