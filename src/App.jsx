@@ -1,6 +1,7 @@
 import './App.css'
 import SliderOne from './components/SliderOne'
 import SliderTwo from './components/SliderTwo'
+import SliderThree from './components/SliderThree'
 
 function App() {
   return (
@@ -20,6 +21,10 @@ function App() {
 
       <div className="wrapper">
         <SliderTwo />
+      </div>
+
+      <div className="wrapper">
+        <SliderThree />
       </div>
     </>
   )
