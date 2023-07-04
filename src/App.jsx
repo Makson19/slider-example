@@ -1,16 +1,6 @@
-import viteLogo from '/vite.svg'
 import './App.css'
-import { Swiper, SwiperSlide } from 'swiper/react'
-
-import "swiper/css";
-import "swiper/css/navigation";
-
-import { Navigation } from "swiper"
-
-import CaptainAmericaImage from './assets/01.jpg'
-import IronManImage from './assets/02.jpg'
-import ThorImage from './assets/03.jpg'
-import TheWitcherImage from './assets/04.jpg'
+import SliderOne from './components/SliderOne'
+import SliderTwo from './components/SliderTwo'
 
 function App() {
   return (
@@ -24,27 +14,12 @@ function App() {
         </div>
 
         <div className="col-2">
-          <Swiper
-          slidesPerView={"auto"}
-          spaceBetween={15}
-          navigation={true}
-          modules={[Navigation]}
-          className="mySwiper"
-          >
-            <SwiperSlide>
-              <img src={CaptainAmericaImage} alt="Pôster do Capitão América" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={IronManImage} alt="Pôster do Homem de Ferro" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={ThorImage} alt="Pôster do Thor" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={TheWitcherImage} alt="Pôster de The Witcher" />
-            </SwiperSlide>
-          </Swiper>
+          <SliderOne />
         </div>
+      </div>
+
+      <div className="wrapper">
+        <SliderTwo />
       </div>
     </>
   )
